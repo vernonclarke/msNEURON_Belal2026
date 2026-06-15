@@ -4,7 +4,7 @@ This page provides movie versions of the simulations illustrated for Figures 4, 
 
 ### Figure 4
 
-<h3 align="center">Dendritic voltage in an iSPN with fast synaptic GABAergic input and subthreshold clustered glutamatergic input</h3>
+<h3 align="center">Dendritic voltage in an iSPN with fast synaptic GABAergic input<br>and subthreshold clustered glutamatergic input</h3>
 
 <p align="center">
   <img src="./animations/iSPN_22513_morphology_700.png" alt="iSPN morphology" />
@@ -25,7 +25,7 @@ This page provides movie versions of the simulations illustrated for Figures 4, 
   </div>
 </div>
 
-<h3 align="center">Dendritic voltage in an iSPN with slow extrasynaptic GABAergic input and subthreshold clustered glutamatergic input</h3>
+<h3 align="center">Dendritic voltage in an iSPN with slow extrasynaptic GABAergic input<br>and subthreshold clustered glutamatergic input</h3>
 
 <p align="center">
   <img src="./animations/iSPN_22713_morphology_700.png" alt="iSPN morphology" />
@@ -48,7 +48,7 @@ This page provides movie versions of the simulations illustrated for Figures 4, 
 
 ### Figure 5
 
-<h3 align="center">Somatic voltage in an iSPN with fast synaptic GABAergic input and suprathreshold clustered glutamatergic input</h3>
+<h3 align="center">Somatic voltage in an iSPN with fast synaptic GABAergic input<br>and suprathreshold clustered glutamatergic input</h3>
 
 <p align="center">
   <img src="./animations/iSPN_2811_morphology_700.png" alt="iSPN morphology" />
@@ -70,7 +70,7 @@ This page provides movie versions of the simulations illustrated for Figures 4, 
 </div>
 
 
-<h3 align="center">Somatic voltage in an iSPN with slow extrasynaptic GABAergic input and suprathreshold clustered glutamatergic input</h3>
+<h3 align="center">Somatic voltage in an iSPN with slow extrasynaptic GABAergic input<br>and suprathreshold clustered glutamatergic input</h3>
 
 <p align="center">
   <img src="./animations/iSPN_2911_morphology_700.png" alt="iSPN morphology" />
@@ -93,7 +93,7 @@ This page provides movie versions of the simulations illustrated for Figures 4, 
 
 ### Figure 6
 
-<h3 align="center">Dendritic voltage in a dSPN with slow extrasynaptic GABAergic input and subthreshold clustered glutamatergic input</h3>
+<h3 align="center">Dendritic voltage in a dSPN with slow extrasynaptic GABAergic input<br>and subthreshold clustered glutamatergic input</h3>
 
 <p align="center">
   <img src="./animations/dSPN_2277_morphology_700.png" alt="dSPN morphology" />
@@ -114,7 +114,7 @@ This page provides movie versions of the simulations illustrated for Figures 4, 
   </div>
 </div>
 
-<h3 align="center">Somatic voltage in a dSPN with slow extrasynaptic GABAergic input and suprathreshold clustered glutamatergic input</h3>
+<h3 align="center">Somatic voltage in a dSPN with slow extrasynaptic GABAergic input<br>and suprathreshold clustered glutamatergic input</h3>
 
 <p align="center">
   <img src="./animations/dSPN_2911_morphology_700.png" alt="dSPN morphology" />
