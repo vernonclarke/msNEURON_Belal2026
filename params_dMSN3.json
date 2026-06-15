@@ -1,0 +1,43 @@
+{
+    "ek"                : { "Value": " -85.65 ",    "Comment": -85.65 },
+    "e_pas"             : { "Value": " -86 ",       "Comment": -86 },
+    "g_pas_all"         : { "Value": " 1.25e-5 ",   "Comment": 1.25e-5 },
+    "gbar_naf_somatic"  : { "Value": " 11.15 ",     "Comment": 12 },
+    "gbar_naf_basal"    : { "Value": " 0.65 ",      "Comment": 0.7 },
+    "gbar_naf_axonal"   : { "Value": " 8.36 ",      "Comment": 9 },
+    "gbar_nap_somatic"  : { "Value": " 2.16e-4 ",   "Comment": 7e-4 },
+    
+    "gbar_kaf_somatic"  : { "Value": " 4.225e-2 ",  "Comment": 0.15 },
+    "gbar_kaf_basal"    : { "Value": " 4.2e-2 ",    "Comment": 0.12 },
+    "gbar_kas_somatic"  : { "Value": " 0.525e-2 ",  "Comment": 0.016 },
+    "gbar_kas_basal"    : { "Value": " 4.2e-3 ",    "Comment": 0.012 },
+    "gbar_kas_axonal"   : { "Value": " 2.45e-3 ",   "Comment": 0.007 },
+    
+    "gbar_kcnq_somatic" : { "Value": " 1.25e-3 ",   "Comment": 1e-4 },
+    "gbar_kcnq_axonal"  : { "Value": " 1.25e-3 ",   "Comment": 1e-4 },
+    "gbar_kcnq_basal"   : { "Value": " 0 ",         "Comment": 1e-4 },
+
+    "gbar_kdr_somatic"  : { "Value": " 4.7e-3 ",    "Comment": 0.00094 },
+    "gbar_kdr_basal"    : { "Value": " 3.5e-3 ",    "Comment": 0.00070 },
+    "gbar_kir_somatic"  : { "Value": " 3.75e-4 ",   "Comment": 0.00012 },
+    "gbar_kir_basal"    : { "Value": " 3.75e-4 ",   "Comment": 0.00024 },
+    "gbar_sk_somatic"   : { "Value": " 2e-5 " },
+    "gbar_sk_basal"     : { "Value": " 2e-5 " },
+    "gbar_bk_somatic"   : { "Value": " 1.3e-4 ",    "Comment": 1.3e-4 },
+    "gbar_bk_basal"     : { "Value": " 1e-4 ",      "Comment": 1e-4 },
+    
+    "pbar_can_somatic"  : { "Value": " 4e-5 ",      "Comment": 4e-5 },
+    "pbar_can_dend"     : { "Value": " 1e-7 ",      "Comment": 1e-7 },
+    "pbar_car_somatic"  : { "Value": " 1.34e-4 ",   "Comment": 1.34e-4 },
+    "pbar_car_basal"    : { "Value": " 1e-4 ",      "Comment": 1e-4 },
+    
+    "pbar_cal12_somatic": { "Value": " 1.34e-5 ",   "Comment": 1.34e-5 },
+    "pbar_cal12_dend"   : { "Value": " 1e-5 ",      "Comment": 1e-5 },
+    "pbar_cal13_somatic": { "Value": " 1.34e-6 ",   "Comment": 1.34e-6 },
+    "pbar_cal13_dend"   : { "Value": " 1e-6 ",      "Comment": 1e-6 },
+    
+    "pbar_cav32_dend"   : { "Value": " 1e-5 ",      "Comment": 1e-6 },
+    "pbar_cav33_dend"   : { "Value": " 2.5e-6 ",    "Comment": 1e-7 },   
+    
+    "gbar_gaba"         : { "Value": " 0 " }
+}

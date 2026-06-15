@@ -1,0 +1,251 @@
+{
+  "_cell_types": {
+    "dSPN": "Direct pathway Spiny Projection Neuron (D1-MSN). Projects directly to GPi/SNr to promote movement. Channel complement: KCNQ as primary K+ channel. Resting Vm ~-80 mV.",
+    "iSPN": "Indirect pathway Spiny Projection Neuron (D2-MSN). Projects to GPe to suppress movement. Channel complement: KCNQ + Kir + Kaf (or Kv4). More hyperpolarized resting Vm (~-85.4 mV), higher threshold for upstate generation — therefore requires fewer glutamate inputs to stay just-subthreshold.",
+    "upstate": "Sustained plateau depolarisation (~-40 to -50 mV) driven by regenerative dendritic NMDA/Ca2+ currents. Threshold number of coincident glutamate inputs determines whether an upstate is triggered.",
+    "M1R_modulation": "Muscarinic M1 receptor activation suppresses K+ channels (KCNQ in dSPN; KCNQ+Kir+Kaf in iSPN), increasing excitability and lowering the glutamate threshold for upstate generation. Modelled by scaling K+ conductances down 50–75%.",
+    "Na_block": "Blocking Na+ channels (Naf) eliminates action potentials and removes Na+-dependent regenerative currents, isolating purely dendritic/passive subthreshold integration.",
+    "N_GLUT_note": "In subthreshold families (225xx, 227xx), N_GLUT is deliberately set just below the upstate threshold for each cell type and K+ channel condition. Because K+ block lowers the threshold, fewer glutamate inputs are needed to stay subthreshold under M1R modulation."
+  },
+
+  "sim225xx downsample": {
+    "description": "Subthreshold glutamate on dend[15] + single fast phasic GABA (12 synapses). GABA onset timing varied relative to glutamate. K+ channel modulation (M1R) tested. N_GLUT fixed just below upstate threshold per condition — adjusted so GABA modulation determines whether an upstate occurs.",
+    "cell_types": "dSPN and iSPN",
+    "dendrites": "dend[15]",
+    "N_GLUT": {
+      "dSPN": {
+        "default (ctrl and 50% K+ block)": 14,
+        "75% K+ block [sims 2256, 2257, 22512, 22513]": 12
+      },
+      "iSPN": {
+        "default (ctrl and 50% K+ block)": 13,
+        "25% K+ remaining — KCNQ+Kir+Kv4 block [sims 2254, 2255, 22514–22517]": 12,
+        "75% K+ block [sims 2256–22513]": 11
+      },
+      "note": "iSPN needs fewer inputs to stay subthreshold because it is more excitable at stronger K+ block."
+    },
+    "GABA": "12 fast synaptic (tau1=0.9 ms, tau2=18 ms, g=0.001 nS)",
+    "stimulation": "current clamp, AMPA+NMDA at 1 kHz; GABA timing swept 120–301 ms (10 ms then 1 ms resolution)",
+    "sims": {
+      "2250": "dSPN, ctrl K+, N_GLUT=14, GABA timing sweep (10 ms steps)",
+      "2251": "dSPN, 50% KCNQ block, N_GLUT=14",
+      "2252": "dSPN, 75% KCNQ block, N_GLUT=12",
+      "2253": "iSPN, ctrl K+, N_GLUT=13",
+      "2254": "iSPN, KCNQ+Kir block, N_GLUT=12",
+      "2255": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=12",
+      "2256": "dSPN, 75% block, N_GLUT=12, fine timing (1 ms steps)",
+      "2257": "dSPN, 75% block, N_GLUT=12, fine timing",
+      "2258": "iSPN, KCNQ+Kir block, N_GLUT=11, fine timing",
+      "2259": "iSPN, KCNQ+Kir block, N_GLUT=11, fine timing",
+      "22510": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=11, fine timing",
+      "22511": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=11, fine timing",
+      "22512": "dSPN, 75% block, N_GLUT=12, fine timing",
+      "22513": "dSPN, 75% block, N_GLUT=12, fine timing",
+      "22514": "iSPN, KCNQ+Kir block, N_GLUT=12, fine timing",
+      "22515": "iSPN, KCNQ+Kir block, N_GLUT=12, fine timing",
+      "22516": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=12, fine timing",
+      "22517": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=12, fine timing"
+    }
+  },
+
+  "sim227xx downsample": {
+    "description": "Subthreshold glutamate on dend[15] + slow extrasynaptic GABA alone (170 synapses). GABA timing varied. K+ channel modulation tested. N_GLUT fixed just below upstate threshold per condition.",
+    "cell_types": "dSPN and iSPN",
+    "dendrites": "dend[15]",
+    "N_GLUT": {
+      "dSPN": {
+        "default": 14,
+        "75% K+ block [sims 2276, 2277, 22712, 22713]": 12
+      },
+      "iSPN": {
+        "default (ctrl / 50% K+ block)": 13,
+        "KCNQ+Kir+Kaf block [sims 2274, 2275, 22714–22716]": 12,
+        "75% block [sims 2276–22713]": 11
+      }
+    },
+    "GABA": "170 slow extrasynaptic (tau1=9 ms, tau2=180 ms, g=25 pS per synapse)",
+    "stimulation": "current clamp, AMPA+NMDA at 1 kHz; GABA timing swept 120–630 ms (30 ms then 3 ms resolution)",
+    "sims": {
+      "2270": "dSPN, ctrl K+, N_GLUT=14, timing sweep (30 ms steps)",
+      "2271": "dSPN, 50% KCNQ block, N_GLUT=14",
+      "2272": "dSPN, 75% KCNQ block, N_GLUT=12",
+      "2273": "iSPN, ctrl K+, N_GLUT=13",
+      "2274": "iSPN, KCNQ+Kir block, N_GLUT=12",
+      "2275": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=12",
+      "2276": "dSPN, 75% block, N_GLUT=12, fine timing (3 ms steps)",
+      "2277": "dSPN, 75% block, N_GLUT=12, fine timing",
+      "2278": "iSPN, KCNQ+Kir block, N_GLUT=11, fine timing",
+      "2279": "iSPN, KCNQ+Kir block, N_GLUT=11, fine timing",
+      "22710": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=11, fine timing",
+      "22711": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=11, fine timing",
+      "22712": "dSPN, 75% block, N_GLUT=12, fine timing",
+      "22713": "dSPN, 75% block, N_GLUT=12, fine timing",
+      "22714": "iSPN, KCNQ+Kir block, N_GLUT=12, fine timing",
+      "22715": "iSPN, KCNQ+Kir block, N_GLUT=12, fine timing",
+      "22716": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=12, fine timing",
+      "22717": "iSPN, KCNQ+Kir+Kv4 block, N_GLUT=12, fine timing"
+    }
+  },
+
+  "sim241x downsample": {
+    "description": "Suprathreshold regime: 4 dendrites each receive clustered glutamate sufficient to reliably trigger upstates. Fast synaptic GABA (N_GABA varies 0–48) arrives 20 ms after glutamate. Tests whether fast GABA suppresses suprathreshold firing and how Na/K channels contribute.",
+    "cell_types": "dSPN and iSPN",
+    "dendrites": "dSPN: dend[15,52,47,21]; iSPN: dend[18,33,5,11] (~157.5 µm from soma)",
+    "N_GLUT": {
+      "dSPN [all prefixes except 2418/2419]": "15 per dendrite × 4 dendrites = 60 total",
+      "iSPN [all prefixes except 2418/2419]": "14 per dendrite × 4 dendrites = 56 total",
+      "sims 2418, 2419 (alt K+ block)": "13 per dendrite × 4 = 52 total (both cell types)"
+    },
+    "GABA": "fast synaptic (tau1=0.9 ms, tau2=18 ms), N_GABA in {0,4,8,12,16,20,24,32,40,48}",
+    "stimulation": "current clamp; GABA delay = 20 ms after glutamate onset",
+    "prefixes": {
+      "2410": "GABA only (no glutamate), ctrl — isolates GABA effect alone",
+      "2411": "Glutamate + GABA, ctrl (dSPN 60, iSPN 56 total inputs)",
+      "2412": "GABA only, voltage clamp",
+      "2413": "Glutamate + GABA, voltage clamp",
+      "2414": "GABA only, Na blocked",
+      "2415": "Glutamate + GABA, Na blocked — dendritic upstate without APs",
+      "2416": "GABA only, K+ reduced (KCNQ dSPN; KCNQ+Kir iSPN)",
+      "2417": "Glutamate + GABA, K+ reduced (KCNQ dSPN; KCNQ+Kir iSPN)",
+      "2418": "GABA only, K+ reduced (KCNQ+Kir+Kaf iSPN alt); N_GLUT=52 total",
+      "2419": "Glutamate + GABA, K+ reduced (KCNQ+Kir+Kaf iSPN alt); N_GLUT=52 total"
+    },
+    "letters": {
+      "a": "N_GABA=0", "b": "N_GABA=4", "c": "N_GABA=8", "d": "N_GABA=12",
+      "e": "N_GABA=16", "f": "N_GABA=20", "g": "N_GABA=24", "h": "N_GABA=32",
+      "i": "N_GABA=40", "j": "N_GABA=48"
+    }
+  },
+
+  "sim251x downsample": {
+    "description": "Suprathreshold 4-dendrite glutamate + slow extrasynaptic GABA (N_GABA 0–480). GABA delay 20 ms. Tests whether slow tonic GABA suppresses upstates differently from fast GABA — slow GABA has a profound effect on iSPN.",
+    "cell_types": "dSPN and iSPN",
+    "dendrites": "dSPN: dend[15,52,47,21]; iSPN: dend[18,33,5,11]",
+    "N_GLUT": {
+      "dSPN [all prefixes except 2518/2519]": "15 per dendrite × 4 = 60 total",
+      "iSPN [all prefixes except 2518/2519]": "14 per dendrite × 4 = 56 total",
+      "sims 2518, 2519": "13 per dendrite × 4 = 52 total (both cell types)"
+    },
+    "GABA": "slow extrasynaptic (tau1=9 ms, tau2=180 ms, g=25 pS), N_GABA in {0,40,80,120,160,200,240,320,400,480}",
+    "stimulation": "current clamp; GABA delay = 20 ms",
+    "prefixes": {
+      "2510": "GABA only, ctrl", "2511": "Glutamate + GABA, ctrl",
+      "2512": "GABA only, voltage clamp", "2513": "Glutamate + GABA, voltage clamp",
+      "2514": "GABA only, Na blocked", "2515": "Glutamate + GABA, Na blocked",
+      "2516": "GABA only, K+ reduced", "2517": "Glutamate + GABA, K+ reduced",
+      "2518": "GABA only, K+ reduced (alt iSPN set); N_GLUT=52 total",
+      "2519": "Glutamate + GABA, K+ reduced (alt iSPN set); N_GLUT=52 total"
+    },
+    "letters": {
+      "a": "N_GABA=0", "b": "N_GABA=40", "c": "N_GABA=80", "d": "N_GABA=120",
+      "e": "N_GABA=160", "f": "N_GABA=200", "g": "N_GABA=240", "h": "N_GABA=320",
+      "i": "N_GABA=400", "j": "N_GABA=480"
+    }
+  },
+
+  "sim261xx downsample": {
+    "description": "Subthreshold regime: N_GLUT varies 0–16 on a single dendrite (dend[15]), with fast phasic GABA (12 synapses) on other dendrites. Glutamate leads GABA by 10 ms. Tests temporal windows of dendritic integration and how K+/Na channel state shifts the threshold.",
+    "cell_types": "dSPN and iSPN (same N_GLUT applied to both)",
+    "dendrites": "dend[15] for glutamate; separate branches for GABA",
+    "N_GLUT": "Varies 0–16 per letter (same for dSPN and iSPN). Single dendrite dend[15] only — not multiplied across sites. N_GLUT=0 = GABA-alone baseline; N_GLUT=16 expected suprathreshold.",
+    "GABA": "12 fast synaptic (tau1=0.9 ms, tau2=18 ms) on non-dend[15] branches; arrives 10 ms after glutamate",
+    "stimulation": "current clamp; glutamate precedes GABA by 10 ms",
+    "prefixes": {
+      "2610": "No GABA, ctrl K+ — glutamate dose-response alone",
+      "2611": "GABA present, ctrl K+ — GABA shunts glutamate, raises effective threshold",
+      "2612": "No GABA, K+ reduced (KCNQ dSPN; KCNQ+Kir+Kaf iSPN) — M1R lowers threshold",
+      "2613": "GABA present, K+ reduced — M1R vs GABA: do they cancel?",
+      "2616": "K+ reduced + Na blocked — passive dendritic integration, no APs",
+      "2617": "K+ reduced + Na blocked + GABA"
+    },
+    "letters": {
+      "a": "N_GLUT=0", "b": "N_GLUT=1", "c": "N_GLUT=2", "d": "N_GLUT=3",
+      "e": "N_GLUT=4", "f": "N_GLUT=5", "g": "N_GLUT=6", "h": "N_GLUT=7",
+      "i": "N_GLUT=8", "j": "N_GLUT=9", "k": "N_GLUT=10", "l": "N_GLUT=11",
+      "m": "N_GLUT=12", "n": "N_GLUT=13", "o": "N_GLUT=14", "p": "N_GLUT=15",
+      "q": "N_GLUT=16"
+    }
+  },
+
+  "sim271xx downsample": {
+    "description": "Same design as sim261xx but GABA is slow extrasynaptic (170 synapses distributed). N_GLUT 0–16 on dend[15]. Slow-GABA counterpart to sim261xx.",
+    "cell_types": "dSPN and iSPN (same N_GLUT applied to both)",
+    "dendrites": "dend[15] (primary); dend[8,10,12,14] also recorded",
+    "N_GLUT": "Varies 0–16 per letter (same for dSPN and iSPN). Single dendrite dend[15] only.",
+    "GABA": "170 slow extrasynaptic (tau1=9 ms, tau2=180 ms, g=25 pS) distributed across dendrites; arrives 10 ms after glutamate",
+    "stimulation": "current clamp; sim duration 530 ms",
+    "prefixes": {
+      "2710": "No GABA, ctrl K+",
+      "2711": "GABA present, ctrl K+",
+      "2712": "No GABA, K+ reduced (KCNQ 50%)",
+      "2713": "GABA present, K+ reduced",
+      "2716": "K+ reduced + Na blocked — passive integration only",
+      "2717": "K+ reduced + Na blocked + GABA"
+    },
+    "letters": {
+      "a": "N_GLUT=0", "b": "N_GLUT=1", "c": "N_GLUT=2", "d": "N_GLUT=3",
+      "e": "N_GLUT=4", "f": "N_GLUT=5", "g": "N_GLUT=6", "h": "N_GLUT=7",
+      "i": "N_GLUT=8", "j": "N_GLUT=9", "k": "N_GLUT=10", "l": "N_GLUT=11",
+      "m": "N_GLUT=12", "n": "N_GLUT=13", "o": "N_GLUT=14", "p": "N_GLUT=15",
+      "q": "N_GLUT=16"
+    }
+  },
+
+  "sim281xx downsample": {
+    "description": "Suprathreshold clustered glutamate across 4 dendrites. Fast synaptic GABA (40 synapses) timing swept 100–300 ms. Tests the temporal window in which fast GABA can suppress or truncate an upstate. Na-block variants isolate the dendritic plateau.",
+    "cell_types": "dSPN and iSPN",
+    "dendrites": "dSPN: dend[15,52,47,21]; iSPN: dend[18,33,5,11]",
+    "N_GLUT": {
+      "dSPN [2810–2813, 28110–28113]": "15 per dendrite × 4 = 60 total",
+      "iSPN [2810–2813, 28110–28113]": "14 per dendrite × 4 = 56 total",
+      "sims 2818, 2819, 28118, 28119 (near-threshold)": "13 per dendrite × 4 = 52 total (both cell types)"
+    },
+    "GABA": "40 fast synaptic synapses; timing swept 100–300 ms",
+    "stimulation": "current clamp; sim duration 600–800 ms",
+    "sims": {
+      "2810": "dSPN 60 / iSPN 56 total inputs, ctrl, 10 ms timing steps",
+      "2811": "dSPN 60 / iSPN 56, ctrl, 1 ms steps",
+      "2812": "dSPN 60 / iSPN 56, M1R (KCNQ reduced), 10 ms steps",
+      "2813": "dSPN 60 / iSPN 56, M1R, 1 ms steps",
+      "2818": "52 total (both), M1R, 10 ms steps — near-threshold",
+      "2819": "52 total, M1R, 1 ms steps",
+      "28110": "dSPN 60 / iSPN 56, ctrl, Na blocked, 10 ms steps",
+      "28111": "dSPN 60 / iSPN 56, ctrl, Na blocked, 1 ms steps",
+      "28112": "dSPN 60 / iSPN 56, M1R + Na blocked, 10 ms steps",
+      "28113": "dSPN 60 / iSPN 56, M1R + Na blocked, 1 ms steps",
+      "28118": "52 total, M1R + Na blocked, 10 ms steps",
+      "28119": "52 total, M1R + Na blocked, 1 ms steps"
+    }
+  },
+
+  "sim291xx downsample": {
+    "description": "Suprathreshold 4-dendrite glutamate + slow extrasynaptic GABA (1600 synapses). GABA timing swept 90–600 ms. Reversed-timing variants sweep glutamate time with GABA fixed. Slow-GABA counterpart to sim281xx.",
+    "cell_types": "dSPN and iSPN",
+    "dendrites": "dSPN: dend[15,52,47,21]; iSPN: dend[18,33,5,11]",
+    "N_GLUT": {
+      "dSPN default": "15 per dendrite × 4 = 60 total",
+      "iSPN default": "14 per dendrite × 4 = 56 total",
+      "sims ending in 8 or 9 (2918, 2919, 29118, 29119, 29128, 29129)": "13 per dendrite × 4 = 52 total (both cell types)"
+    },
+    "GABA": "1600 slow extrasynaptic (tau1=9 ms, tau2=180 ms, g=25 pS) distributed across all dendrites",
+    "stimulation": "current clamp; GABA timing swept 90–600 ms (30 ms or 5 ms steps); sim duration 800–1080 ms",
+    "sims": {
+      "2910": "dSPN 60 / iSPN 56 total, ctrl, 30 ms steps",
+      "2911": "dSPN 60 / iSPN 56, ctrl, 5 ms steps",
+      "2912": "dSPN 60 / iSPN 56, M1R, 30 ms steps",
+      "2913": "dSPN 60 / iSPN 56, M1R, 5 ms steps",
+      "2918": "52 total, M1R, 30 ms steps — near-threshold",
+      "2919": "52 total, M1R, 5 ms steps",
+      "29110": "dSPN 60 / iSPN 56, ctrl, Na blocked, 30 ms steps",
+      "29111": "dSPN 60 / iSPN 56, ctrl, Na blocked, 5 ms steps",
+      "29112": "dSPN 60 / iSPN 56, M1R + Na blocked, 30 ms steps",
+      "29113": "dSPN 60 / iSPN 56, M1R + Na blocked, 5 ms steps",
+      "29118": "52 total, M1R + Na blocked, 30 ms steps",
+      "29119": "52 total, M1R + Na blocked, 5 ms steps",
+      "29120": "dSPN 60 / iSPN 56, ctrl, reversed timing (glutamate swept, GABA fixed), 30 ms steps",
+      "29121": "dSPN 60 / iSPN 56, ctrl, reversed timing, 5 ms steps",
+      "29128": "52 total, M1R, reversed timing, 30 ms steps",
+      "29129": "52 total, M1R, reversed timing, 5 ms steps"
+    }
+  }
+}

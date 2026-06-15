@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Architecture-specific builds
+arm64/
+
+# Project folders to ignore
+backup/
+analysis/
+dspn/
+ispn/
+logs/
+docs/
+
+
+*.txt
+
+# Python cache
+__pycache__/
+.DS_Store
+.DS_Store
+
+# NEURON-generated mechanism build outputs
+mechanisms/**/*.c
+mechanisms/**/*.o
+mechanisms/**/*.obj
+mechanisms/**/x86_64/
+mechanisms/**/aarch64/
+mechanisms/**/nrnmech.dll

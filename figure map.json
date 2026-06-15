@@ -1,0 +1,507 @@
+{
+  "Figure 4": {
+    "legend": "Figure 4. Effect of M1 mAChR activation on the temporal interaction between subthreshold glutamatergic and GABAergic inputs in a model iSPN. (a) Circuit diagram depicting cholinergic control of GABAergic microcircuits targeting SPNs and a schematic illustrating inputs onto a stretch of SPN dendrite. Corticothalamic (Ctx/Th) glutamatergic input onto dendritic spines provides fast excitatory drive. Cholinergic activation of NGFI (green) and THI (blue) neurons drives slow extrasynaptic GABAergic receptor activation and fast synaptic GABAergic input on the target SPN (black), respectively. (b) Reconstructed iSPN morphology showing dendritic sites of clustered glutamatergic activation (red) and fast synaptic GABAergic input (blue; left) and slow extrasynaptic GABAergic receptor activation (green; right). (c) Fast synaptic GABAergic input effect on glutamatergic synaptic potentials at dendritic and somatic sites in control (left) and following M1 receptor activation (right). Black trace shows subthreshold glutamatergic excitation (11 neighboring spines at a single dendritic site). Gray trace shows phasic fast synaptic GABAergic activation (12 synapses each comprising 40 receptors with 25 pS peak conductance; ΣgGABA = 12 nS; PSP amplitude 8.0 mV at dendritic spike site). Color traces (blue to red) illustrate glutamatergic-GABAergic interactions across temporal offsets Δt = tGLUT - tGABA ranging from -30 to 150 ms; 10 ms intervals at dendritic site of activation and cell soma. (d) Summary of timing-dependent effects on the resultant PSP amplitude at dendritic (orange) and somatic (blue) sites, normalized to control, in the absence and presence of M1 receptor activation at increased temporal offset fidelity. (e, f) As in (b, c) but for slow extrasynaptic GABAergic receptor activation (170 receptors, 25 pS; ΣgGABA = 4.25 nS; PSP = 7.3 mV at dendritic spike site) with Δt ranging from -30 to 480 ms; 30 ms intervals. Fast synaptic GABAergic input and slow extrasynaptic GABAergic receptor activation both augmented PSPs produced by clustered glutamatergic input, but, in both simulations, remained subthreshold for dendritic spike generation under control conditions. Following M1 receptor modulation of Kir2, Kv4 and Kv7 K+ channels, supralinear NMDA receptor-dependent dendritic spikes were observed. Slow extrasynaptic GABAergic receptor activation extended the temporal window for this enhancement.",
+    "panels": {
+      "b": {
+        "description": "Reconstructed iSPN morphology showing dendritic sites of fast synaptic GABAergic input and slow extrasynaptic GABAergic receptor activation",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "fast synaptic and slow extrasynaptic GABAergic",
+        "conditions": ["control"],
+        "simulations": ["sim2256", "sim22512"],
+        "simulation_notebook": "sim225xx downsample.ipynb",
+        "analysis_notebooks": ["sim2256 analysis.ipynb", "sim22512 analysis.ipynb"],
+        "legend_excerpt": "Reconstructed iSPN morphology showing dendritic sites of clustered glutamatergic activation (red) and fast synaptic GABAergic input (blue; left) and slow extrasynaptic GABAergic receptor activation (green; right)."
+      },
+      "c": {
+        "description": "Fast synaptic GABAergic input effect on subthreshold glutamatergic synaptic potentials at dendritic and somatic sites in control and following M1 receptor activation for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2256", "sim22512"],
+        "simulation_notebook": "sim225xx downsample.ipynb",
+        "analysis_notebooks": ["sim2256 analysis.ipynb", "sim22512 analysis.ipynb"],
+        "legend_excerpt": "Fast synaptic GABAergic input effect on glutamatergic synaptic potentials at dendritic and somatic sites in control (left) and following M1 receptor activation (right). Black trace shows subthreshold glutamatergic excitation (11 neighboring spines at a single dendritic site). Gray trace shows phasic fast synaptic GABAergic activation (12 synapses each comprising 40 receptors with 25 pS peak conductance; SgGABA = 12 nS; PSP amplitude 8.0 mV at dendritic spike site). Color traces (blue to red) illustrate glutamatergic-GABAergic interactions across temporal offsets Δt = tGLUT - tGABA ranging from -30 to 150 ms; 10 ms intervals at dendritic site of activation and cell soma."
+      },
+      "d": {
+        "description": "Summary of timing-dependent effects on PSP amplitude at dendritic and somatic sites in control and following M1 receptor activation for iSPN at increased temporal offset fidelity; fast synaptic GABAergic input",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2257", "sim22513"],
+        "simulation_notebook": "sim225xx downsample.ipynb",
+        "analysis_notebooks": ["sim2257 analysis.ipynb", "sim22513 analysis.ipynb"],
+        "legend_excerpt": "Summary of timing-dependent effects on the resultant PSP amplitude at dendritic (orange) and somatic (blue) sites, normalized to control, in the absence and presence of M1 receptor activation at increased temporal offset fidelity."
+      },
+      "e": {
+        "description": "Slow extrasynaptic GABAergic receptor activation effect on subthreshold glutamatergic synaptic potentials at dendritic and somatic sites in control and following M1 receptor activation for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2276", "sim22712"],
+        "simulation_notebook": "sim227xx downsample.ipynb",
+        "analysis_notebooks": ["sim2276 analysis.ipynb", "sim22712 analysis.ipynb"],
+        "legend_excerpt": "As in (b, c) but for slow extrasynaptic GABAergic receptor activation (170 receptors, 25 pS; SgGABA = 4.25 nS; PSP = 7.3 mV at dendritic spike site) with Δt ranging from -30 to 480 ms; 30 ms intervals."
+      },
+      "f": {
+        "description": "Summary of timing-dependent effects on PSP amplitude at dendritic and somatic sites in control and following M1 receptor activation for iSPN at increased temporal offset fidelity; slow extrasynaptic GABAergic receptor activation",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2277", "sim22713"],
+        "simulation_notebook": "sim227xx downsample.ipynb",
+        "analysis_notebooks": ["sim2277 analysis.ipynb", "sim22713 analysis.ipynb"],
+        "legend_excerpt": "As in (b, c) but for slow extrasynaptic GABAergic receptor activation (170 receptors, 25 pS; SgGABA = 4.25 nS; PSP = 7.3 mV at dendritic spike site) with Δt ranging from -30 to 480 ms; 30 ms intervals. Fast synaptic GABAergic input and slow extrasynaptic GABAergic receptor activation both augmented PSPs produced by clustered glutamatergic input, but, in both simulations, remained subthreshold for dendritic spike generation under control conditions. Following M1 receptor modulation of Kir2, Kv4 and Kv7 K+ channels, supralinear NMDA receptor-dependent dendritic spikes were observed. Slow extrasynaptic GABAergic receptor activation extended the temporal window for this enhancement."
+      }
+    }
+  },
+
+  "Figure 5": {
+    "legend": "Figure 5. Effect of M1 mAChR activation on the temporal interaction between suprathreshold glutamatergic and GABAergic inputs in a model iSPN. (a) Circuit diagram depicting cholinergic control of GABAergic microcircuits targeting SPNs and a schematic illustrating inputs onto a stretch of SPN dendrite. (b) Reconstructed iSPN morphology showing four dendritic sites of clustered glutamatergic activation (red) and fast synaptic GABAergic input (blue; left) and slow extrasynaptic GABAergic receptor activation (green; right). (c) Effect of fast GABAergic activation on glutamatergic responses at dendritic and somatic sites in control (left) and following M1 receptor modulation of Kir2, Kv4 and Kv7 K+ channels (right). Black trace shows suprathreshold glutamatergic excitation (14 neighboring synapses activated at four independent dendritic sites; dendritic example taken from input site 1) and gray trace shows GABAergic activation (40 synapses each comprising 40 receptors with 25 pS peak conductance; ΣgGABA = 40 nS). Color traces illustrate interactions synaptic potentials at a dendritic site of clustered glutamatergic input (site 1) and at the cell soma for temporal offsets Δt = tGLUT - tGABA of -80, -50, -35, -20, 10ms, respectively. (d) Summary of effects on somatic spike output across Δt in control and M1 receptor activation conditions. (e, f) As in (b, c) but for slow extrasynaptic GABAergic input (gray trace: 1600 receptors, 25 pS; ΣgGABA = 40 nS) with Δt = tGLUT - tGABA illustrated from -80 to 60 ms; 20 ms intervals. In both simulations, GABAergic activation reduced the total number of spikes generated at the soma. When repeated with concomitant M1R activation, the suppression of spike activity was attenuated helping to maintain somatic train output. The suppression of spiking and its relief by M1R activation was more pronounced with slow GABAergic activation.",
+    "panels": {
+      "b": {
+        "description": "Reconstructed iSPN morphology showing four dendritic sites of clustered glutamatergic activation and fast synaptic GABAergic input and slow extrasynaptic GABAergic receptor activation",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "fast synaptic and slow extrasynaptic GABAergic",
+        "conditions": ["control"],
+        "simulations": ["sim2811", "sim2819"],
+        "simulation_notebook": "sim281xx downsample.ipynb",
+        "analysis_notebooks": ["sim2811 iSPN analysis.ipynb", "sim2819 iSPN analysis.ipynb"],
+        "legend_excerpt": "Reconstructed iSPN morphology showing four dendritic sites of clustered glutamatergic activation (red) and fast synaptic GABAergic input (blue; left) and slow extrasynaptic GABAergic receptor activation (green; right)."
+      },
+      "c": {
+        "description": "Fast synaptic GABAergic input effect on suprathreshold glutamatergic responses at dendritic and somatic sites in control and following M1 receptor activation for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2811", "sim2819"],
+        "simulation_notebook": "sim281xx downsample.ipynb",
+        "analysis_notebooks": ["sim2811 iSPN analysis.ipynb", "sim2819 iSPN analysis.ipynb"],
+        "legend_excerpt": "Effect of fast GABAergic activation on glutamatergic responses at dendritic and somatic sites in control (left) and following M1 receptor modulation of Kir2, Kv4 and Kv7 K+ channels (right). Black trace shows suprathreshold glutamatergic excitation (14 neighboring synapses activated at four independent dendritic sites; dendritic example taken from input site 1) and gray trace shows GABAergic activation (40 synapses each comprising 40 receptors with 25 pS peak conductance; SgGABA = 40 nS). Color traces illustrate interactions synaptic potentials at a dendritic site of clustered glutamatergic input (site 1) and at the cell soma for temporal offsets Δt = tGLUT - tGABA of -80, -50, -35, -20, 10ms, respectively."
+      },
+      "d": {
+        "description": "Summary of timing-dependent effects on somatic spike output across Δt in control and following M1 receptor activation for iSPN at increased temporal offset fidelity; fast synaptic GABAergic input",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim28111", "sim28119"],
+        "simulation_notebook": "sim281xx downsample.ipynb",
+        "analysis_notebooks": ["sim28111 iSPN analysis.ipynb", "sim28119 iSPN analysis.ipynb"],
+        "legend_excerpt": "Summary of effects on somatic spike output across Δt in control and M1 receptor activation conditions."
+      },
+      "e": {
+        "description": "Slow extrasynaptic GABAergic input effect on suprathreshold glutamatergic responses at dendritic and somatic sites in control and following M1 receptor activation for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2911", "sim2919"],
+        "simulation_notebook": "sim291xx downsample.ipynb",
+        "analysis_notebooks": ["sim2911 iSPN analysis.ipynb", "sim2919 iSPN analysis.ipynb"],
+        "legend_excerpt": "As in (b, c) but for slow extrasynaptic GABAergic input (gray trace: 1600 receptors, 25 pS; SgGABA = 40 nS) with Δt = tGLUT - tGABA illustrated from -80 to 60 ms; 20 ms intervals."
+      },
+      "f": {
+        "description": "Summary of timing-dependent effects on somatic spike output across Δt in control and following M1 receptor activation for iSPN at increased temporal offset fidelity; slow extrasynaptic GABAergic input",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim29111", "sim29119"],
+        "simulation_notebook": "sim291xx downsample.ipynb",
+        "analysis_notebooks": ["sim29111 iSPN analysis.ipynb", "sim29119 iSPN analysis.ipynb"],
+        "legend_excerpt": "As in (b, c) but for slow extrasynaptic GABAergic input (gray trace: 1600 receptors, 25 pS; SgGABA = 40 nS) with Δt = tGLUT - tGABA illustrated from -80 to 60 ms; 20 ms intervals. In both simulations, GABAergic activation reduced the total number of spikes generated at the soma. When repeated with concomitant M1R activation, the suppression of spike activity was attenuated helping to maintain somatic train output. The suppression of spiking and its relief by M1R activation was more pronounced with slow GABAergic activation."
+      }
+    }
+  },
+
+  "Figure 6": {
+    "legend": "Figure 6. Effect of M1 mAChR activation on the interaction between glutamatergic input and slow extrasynaptic GABAergic responses in a model dSPN. (a) Circuit diagram depicting cholinergic control of GABAergic microcircuits targeting SPNs and a schematic illustrating inputs onto a stretch of SPN dendrite. (b) Reconstructed dSPN morphology showing subthreshold (1 site; left) and suprathreshold (4 sites; right) of clustered glutamatergic activation (red) and slow (green; right) GABAergic inputs. (c) Slow extrasynaptic GABAergic activation effect on glutamatergic synaptic potentials at dendritic and somatic sites in control (left) and following M1 receptor modulation of Kir2 channels (right). Black trace: subthreshold glutamatergic excitation (12 inputs). Gray trace: slow GABAergic activation (170 receptors, 25 pS; ΣgGABA = 4.25 nS; PSP = 6.2 mV at dendritic spike site). Colored traces (blue to red): glutamatergic-GABAergic interaction at temporal offsets Δt = tGLUT - tGABA is illustrated from -30 to 480 ms; 30 ms intervals. (d) Summary of timing dependent effects on PSP amplitude. No effect of M1 receptor activation was observed. (e, f) As in (c, d) but for suprathreshold glutamatergic input (15 inputs per site; 4 sites). Gray trace: slow extrasynaptic GABAergic activation (1600 receptors, 25 pS; ΣgGABA = 40 nS). Colored traces (blue to red): glutamatergic-GABAergic interaction at temporal offsets Δt = tGLUT - tGABA of -100, -60, -40, -20, 0 +40 and +80, respectively. Only a modest effect of M1 receptor activation on spike output was observed.",
+    "panels": {
+      "b": {
+        "description": "Reconstructed dSPN morphology showing subthreshold and suprathreshold clustered glutamatergic activation and slow extrasynaptic GABAergic receptor activation",
+        "cell_type": "dSPN",
+        "glutamate_input": ["subthreshold", "suprathreshold"],
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control"],
+        "simulations": ["sim2276", "sim22712"],
+        "simulation_notebook": "sim227xx downsample.ipynb",
+        "analysis_notebooks": ["sim2276 analysis.ipynb", "sim22712 analysis.ipynb"],
+        "legend_excerpt": "Reconstructed dSPN morphology showing subthreshold (1 site; left) and suprathreshold (4 sites; right) of clustered glutamatergic activation (red) and slow (green; right) GABAergic inputs."
+      },
+      "c": {
+        "description": "Slow extrasynaptic GABAergic activation effect on subthreshold glutamatergic synaptic potentials at dendritic and somatic sites in control and following M1 receptor activation for dSPN at high fidelity",
+        "cell_type": "dSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2277", "sim22713"],
+        "simulation_notebook": "sim227xx downsample.ipynb",
+        "analysis_notebooks": ["sim2277 analysis.ipynb", "sim22713 analysis.ipynb"],
+        "legend_excerpt": "Slow extrasynaptic GABAergic activation effect on glutamatergic synaptic potentials at dendritic and somatic sites in control (left) and following M1 receptor modulation of Kir2 channels (right). Black trace: subthreshold glutamatergic excitation (12 inputs). Gray trace: slow GABAergic activation (170 receptors, 25 pS; SgGABA = 4.25 nS; PSP = 6.2 mV at dendritic spike site). Colored traces (blue to red): glutamatergic-GABAergic interaction at temporal offsets Δt = tGLUT - tGABA is illustrated from -30 to 480 ms; 30 ms intervals."
+      },
+      "d": {
+        "description": "Summary of timing-dependent effects on PSP amplitude in control and following M1 receptor activation for dSPN; slow extrasynaptic GABAergic receptor activation",
+        "cell_type": "dSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2277", "sim22713"],
+        "simulation_notebook": "sim227xx downsample.ipynb",
+        "analysis_notebooks": ["sim2277 analysis.ipynb", "sim22713 analysis.ipynb"],
+        "legend_excerpt": "Summary of timing dependent effects on PSP amplitude. No effect of M1 receptor activation was observed."
+      },
+      "e": {
+        "description": "Slow extrasynaptic GABAergic input effect on suprathreshold glutamatergic responses at dendritic and somatic sites in control and following M1 receptor activation for dSPN",
+        "cell_type": "dSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2911", "sim2913"],
+        "simulation_notebook": "sim291xx downsample.ipynb",
+        "analysis_notebooks": ["sim2911 dSPN analysis.ipynb", "sim2913 dSPN analysis.ipynb"],
+        "legend_excerpt": "As in (c, d) but for suprathreshold glutamatergic input (15 inputs per site; 4 sites). Gray trace: slow extrasynaptic GABAergic activation (1600 receptors, 25 pS; SgGABA = 40 nS). Colored traces (blue to red): glutamatergic-GABAergic interaction at temporal offsets Δt = tGLUT - tGABA of -100, -60, -40, -20, 0 +40 and +80, respectively."
+      },
+      "f": {
+        "description": "Summary of timing-dependent effects on somatic spike output in control and following M1 receptor activation for dSPN at high fidelity; slow extrasynaptic GABAergic input",
+        "cell_type": "dSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim29111", "sim29113"],
+        "simulation_notebook": "sim291xx downsample.ipynb",
+        "analysis_notebooks": ["sim29111 dSPN analysis.ipynb", "sim29113 dSPN analysis.ipynb"],
+        "legend_excerpt": "Only a modest effect of M1 receptor activation on spike output was observed."
+      }
+    }
+  },
+
+  "Figure S1": {
+    "legend": "Figure S1. (a) Morphology of a reconstructed dSPN. (b) Plot of input resistance (measured using hyperpolarizing current steps of −10 pA, 1000 ms) as a function of holding membrane potential under control conditions (black, filled circles) and following partial block of Kv7 potassium channels (80% reduction in local membrane conductance density where expressed; red, open circles). (c) Plot of membrane conductance density versus holding membrane potential. At hyperpolarized potentials, input resistance is dominated by high Kir2 conductance density. The increase in input resistance with depolarization reflects the intrinsic inward rectification of this channel, manifested as a reduction in Kir2 conductance density. At more depolarized potentials, the subsequent decrease in input resistance is primarily attributable to activation of other voltage-gated K⁺ channels, notably Kv4 and Kv1 increasing their conductance densities. Kv7 blockade only shifts its conductance density (open circles; direction indicated by an arrow). (d) Rheobase (defined as the minimum positive current to cause an action potential from membrane resting potential) was +155 pA under control (black line). The same current step causes a dramatic increase in spiking to the same current step following partial block of Kv7 potassium channel (80% reduction; red line). (e) Single examples of increasing positive current steps and (f) summary to show the reduced rheobase and increased spike count rate to depolarizing current steps when Kv7 is blocked (control: black, filled circles; Kv7 blockade: red, open circles). Similar plots are shown for the simulated iSPN (g-l). The effects are qualitatively similar. The main differences are that input resistance is slightly elevated manifesting as an increased excitability / reduced rheobase (iSPN vs dSPN: +129 pA vs +155 pA).",
+    "panels": {
+      "a": {
+        "description": "Morphology of a reconstructed dSPN",
+        "cell_type": "dSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control"],
+        "simulations": ["sim1001"],
+        "simulation_notebook": "passive tune downsample.ipynb",
+        "analysis_notebooks": ["passive tune analysis.ipynb"],
+        "legend_excerpt": "Morphology of a reconstructed dSPN."
+      },
+      "b": {
+        "description": "Input resistance as a function of holding membrane potential in control and following Kv7 blockade for dSPN",
+        "cell_type": "dSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1005", "sim1006"],
+        "simulation_notebook": "passive tune IR downsample.ipynb",
+        "analysis_notebooks": ["passive tune IR analysis Matplotlib.ipynb"],
+        "legend_excerpt": "Plot of input resistance (measured using hyperpolarizing current steps of −10 pA, 1000 ms) as a function of holding membrane potential under control conditions (black, filled circles) and following partial block of Kv7 potassium channel channels (80% reduction in local membrane conductance density where expressed; red, open circles)."
+      },
+      "c": {
+        "description": "Membrane conductance density as a function of holding membrane potential in control and following Kv7 blockade for dSPN",
+        "cell_type": "dSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1005", "sim1006"],
+        "simulation_notebook": "passive tune IR downsample.ipynb",
+        "analysis_notebooks": ["passive tune IR analysis Matplotlib.ipynb"],
+        "legend_excerpt": "Plot of membrane conductance density versus holding membrane potential. At hyperpolarized potentials, input resistance is dominated by high Kir conductance density. The increase in input resistance with depolarization reflects the intrinsic inward rectification of this channel, manifested as a reduction in Kir conductance density. Kv7 blockade only shifts its conductance density (open circles; direction indicated by an arrow)."
+      },
+      "d": {
+        "description": "Rheobase current step in control and following Kv7 blockade for dSPN",
+        "cell_type": "dSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1003", "sim1004"],
+        "simulation_notebook": "passive tune downsample.ipynb",
+        "analysis_notebooks": ["passive tune analysis.ipynb"],
+        "legend_excerpt": "Rheobase (defined as the minimum positive current to cause an action potential from membrane resting potential) was +155 pA under control (black line). The same current step causes a dramatic increase in spiking to the same current step following partial block of Kv7 potassium channel channels (80% reduction; red line)."
+      },
+      "e": {
+        "description": "Single examples of increasing positive current steps for dSPN in control and following Kv7 blockade",
+        "cell_type": "dSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1001", "sim1002"],
+        "simulation_notebook": "passive tune downsample.ipynb",
+        "analysis_notebooks": ["passive tune analysis.ipynb"],
+        "legend_excerpt": "Single examples of increasing positive current steps."
+      },
+      "f": {
+        "description": "Summary of reduced rheobase and increased spike count rate to depolarizing current steps following Kv7 blockade for dSPN",
+        "cell_type": "dSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1001", "sim1002"],
+        "simulation_notebook": "passive tune downsample.ipynb",
+        "analysis_notebooks": ["passive tune analysis.ipynb"],
+        "legend_excerpt": "Summary to show the reduced rheobase and increased spike count rate to depolarizing current steps when Kv7 is blocked (control: black, filled circles; Kv7 blockade: red, open circles)."
+      },
+      "g": {
+        "description": "Morphology of a reconstructed iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control"],
+        "simulations": ["sim1001"],
+        "simulation_notebook": "passive tune downsample.ipynb",
+        "analysis_notebooks": ["passive tune analysis.ipynb"],
+        "legend_excerpt": "Similar plots are shown for the simulated iSPN (g-l). The effects are qualitatively similar. The main differences are that input resistance is slightly elevated manifesting as an increased excitability / reduced rheobase (iSPN vs dSPN: +129 pA vs +155 pA)."
+      },
+      "h": {
+        "description": "Input resistance as a function of holding membrane potential in control and following Kv7 blockade for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1005", "sim1006"],
+        "simulation_notebook": "passive tune IR downsample.ipynb",
+        "analysis_notebooks": ["passive tune IR analysis Matplotlib.ipynb"],
+        "legend_excerpt": "Plot of input resistance as a function of holding membrane potential under control conditions and following partial block of Kv7 potassium channel channels (80% reduction in local membrane conductance density where expressed)."
+      },
+      "i": {
+        "description": "Membrane conductance density as a function of holding membrane potential in control and following Kv7 blockade for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1005", "sim1006"],
+        "simulation_notebook": "passive tune IR downsample.ipynb",
+        "analysis_notebooks": ["passive tune IR analysis Matplotlib.ipynb"],
+        "legend_excerpt": "Plot of membrane conductance density versus holding membrane potential."
+      },
+      "j": {
+        "description": "Rheobase current step in control and following Kv7 blockade for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1003", "sim1004"],
+        "simulation_notebook": "passive tune downsample.ipynb",
+        "analysis_notebooks": ["passive tune analysis.ipynb"],
+        "legend_excerpt": "Rheobase for iSPN was +129 pA under control."
+      },
+      "k": {
+        "description": "Single examples of increasing positive current steps for iSPN in control and following Kv7 blockade",
+        "cell_type": "iSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1001", "sim1002"],
+        "simulation_notebook": "passive tune downsample.ipynb",
+        "analysis_notebooks": ["passive tune analysis.ipynb"],
+        "legend_excerpt": "Single examples of increasing positive current steps for iSPN."
+      },
+      "l": {
+        "description": "Summary of reduced rheobase and increased spike count rate to depolarizing current steps following Kv7 blockade for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": null,
+        "gaba_type": null,
+        "conditions": ["control", "Kv7 blockade"],
+        "simulations": ["sim1001", "sim1002"],
+        "simulation_notebook": "passive tune downsample.ipynb",
+        "analysis_notebooks": ["passive tune analysis.ipynb"],
+        "legend_excerpt": "Summary to show the reduced rheobase and increased spike count rate to depolarizing current steps when Kv7 is blocked."
+      }
+    }
+  },
+
+  "Figure S2": {
+    "legend": "Figure S2. Effect of M1 mAChR activation on the temporal interaction between subthreshold glutamatergic and GABAergic inputs in a model iSPN. (a) Reconstructed iSPN morphology showing clustered glutamatergic input (red) and fast synaptic GABAergic input (blue). (b) Effect of increasing glutamatergic synapse number at a fixed dendritic site with fast synaptic GABAergic input (12 synapses each comprising 40 receptors with 25 pS peak conductance; ΣgGABA = 12 nS; PSP amplitude 8.0 mV at dendritic spike site) in control (left) and M1 receptor modulation of Kir2, Kv4 and Kv7 K+ channels (right). Color traces represent incremental glutamatergic recruitment (NGLUT = 0-16) with fixed GABAergic activity (Δt = +10 ms; i.e. glutamate activity follows GABAergic input) at dendritic site of spike generation and cell soma. M1 receptor activation lowers dendritic spike threshold from NGLUT = 11 to 9. (c) Reconstructed iSPN morphology showing dendritic sites of clustered glutamatergic activation (red) and slow (green) extrasynaptic GABAergic receptor inputs. (d) Illustrating the effect of the slow GABAergic activation (170 receptors, 25 pS; ΣgGABA = 4.25 nS; PSP = 7.3 mV at dendritic spike site) on the same dendritic glutamatergic inputs as before (i.e. panel B; Δt = +30 ms). Again, M1 receptor activation lowers dendritic spike threshold from NGLUT = 11 to 9.",
+    "panels": {
+      "a": {
+        "description": "Reconstructed iSPN morphology showing clustered glutamatergic activation and fast synaptic GABAergic input",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control"],
+        "simulations": ["sim2611"],
+        "simulation_notebook": "sim261xx downsample.ipynb",
+        "analysis_notebooks": ["sim2611 iSPN analysis.ipynb"],
+        "legend_excerpt": "Reconstructed iSPN morphology showing clustered glutamatergic input (red) and fast synaptic GABAergic input (blue)."
+      },
+      "b": {
+        "description": "Effect of varying number of glutamatergic synapses with fixed fast synaptic GABAergic input in control and following M1 receptor activation for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2610", "sim2611", "sim2612", "sim2613", "sim2616", "sim2617"],
+        "simulation_notebook": "sim261xx downsample.ipynb",
+        "analysis_notebooks": [
+          "sim2610 iSPN analysis.ipynb",
+          "sim2611 iSPN analysis.ipynb",
+          "sim2612 iSPN analysis.ipynb",
+          "sim2613 iSPN analysis.ipynb",
+          "sim2616 iSPN analysis.ipynb",
+          "sim2617 iSPN analysis.ipynb"
+        ],
+        "legend_excerpt": "Effect of increasing glutamatergic synapse number at a fixed dendritic site with fast synaptic GABAergic input (12 synapses each comprising 40 receptors with 25 pS peak conductance; SgGABA = 12 nS; PSP amplitude 8.0 mV at dendritic spike site) in control (left) and M1 receptor modulation of Kir2, Kv4 and Kv7 K+ channels (right). Color traces represent incremental glutamatergic recruitment (NGLUT = 0-16) with fixed GABAergic activity (Δt = +10 ms; i.e. glutamate activity follows GABAergic input) at dendritic site of spike generation and cell soma. M1 receptor activation lowers dendritic spike threshold from NGLUT = 11 to 9."
+      },
+      "c": {
+        "description": "Reconstructed iSPN morphology showing clustered glutamatergic activation and slow extrasynaptic GABAergic receptor activation",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control"],
+        "simulations": ["sim2711"],
+        "simulation_notebook": "sim271xx downsample.ipynb",
+        "analysis_notebooks": ["sim2711 iSPN analysis.ipynb"],
+        "legend_excerpt": "Reconstructed iSPN morphology showing dendritic sites of clustered glutamatergic activation (red) and slow (green) extrasynaptic GABAergic receptor inputs."
+      },
+      "d": {
+        "description": "Effect of varying number of glutamatergic synapses with fixed slow extrasynaptic GABAergic receptor activation in control and following M1 receptor activation for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2710", "sim2711", "sim2712", "sim2713", "sim2716", "sim2717"],
+        "simulation_notebook": "sim271xx downsample.ipynb",
+        "analysis_notebooks": [
+          "sim2710 iSPN analysis.ipynb",
+          "sim2711 iSPN analysis.ipynb",
+          "sim2712 iSPN analysis.ipynb",
+          "sim2713 iSPN analysis.ipynb",
+          "sim2716 iSPN analysis.ipynb",
+          "sim2717 iSPN analysis.ipynb"
+        ],
+        "legend_excerpt": "Illustrating the effect of the slow GABAergic activation (170 receptors, 25 pS; SgGABA = 4.25 nS; PSP = 7.3 mV at dendritic spike site) on the same dendritic glutamatergic inputs as before (i.e. panel B; Δt = +30 ms). Again, M1 receptor activation lowers dendritic spike threshold from NGLUT = 11 to 9."
+      }
+    }
+  },
+
+  "Figure S3": {
+    "legend": "Figure S3. Effect of M1 mAChR activation on the interaction between suprathreshold glutamatergic input and varying amplitude, temporally fixed GABAergic input in a model iSPN. (a) Reconstructed iSPN morphology showing four dendritic sites of clustered glutamatergic activation (red; sites 1-4) and fast synaptic GABAergic input (blue). (b) Synaptic potentials at a dendritic site (site 1) and soma showing the effect of varying fast synaptic GABAergic input alone (gray) and when delivered 30 ms after suprathreshold glutamatergic input (14 inputs/site; color traces). Traces illustrate the effect of increasing GABAergic synaptic activity (0 - 48 synapses; each comprising 40 receptors with 25 pS peak conductance; blue to red) delivered at the same temporal offset (i.e. Δt = -30 ms) in the absence and presence of M1R activation. GABAergic synapse recruitment increased somatic depolarization (blue open circles; dotted line) with a concomitant decrease in impedance (orange open circles; dotted line). A small reduction in the total number of spikes generated at the soma was observed (blue open circles; dotted line). M1 receptor modulation of Kir2, Kv4 and Kv7 K+ channels increased GABAergic-mediated somatic depolarization and maintained somatic spike output (closed circles; solid line). (c, d) As in (a, b) but for slow extrasynaptic GABAergic receptor activation (0 -1920 receptors; blue to red) color-matched to the same overall conductance loads as panel c (i.e. ΣgGABA) at the same temporal offset (i.e. Δt = -30 ms). Extrasynaptic GABAergic receptor recruitment increased somatic depolarization (blue open circles; dotted line) with a concomitant decrease in impedance (orange open circles; dotted line). The suppression of spiking and its relief by M1R activation were more pronounced with slow GABAergic activation than fast synaptic activation at the same overall conductance load.",
+    "panels": {
+      "a": {
+        "description": "Reconstructed iSPN morphology showing four dendritic sites of clustered glutamatergic activation and fast synaptic GABAergic input",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control"],
+        "simulations": ["sim2411"],
+        "simulation_notebook": "sim241x downsample.ipynb",
+        "analysis_notebooks": ["sim2411 iSPN analysis.ipynb"],
+        "legend_excerpt": "Reconstructed iSPN morphology showing four dendritic sites of clustered glutamatergic activation (red; sites 1–4) and fast synaptic GABAergic input (blue)."
+      },
+      "b": {
+        "description": "Effect of varying number of fast synaptic GABAergic synapses at fixed suprathreshold glutamatergic input in control and following M1 receptor activation for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2410", "sim2411", "sim2418", "sim2419"],
+        "simulation_notebook": "sim241x downsample.ipynb",
+        "analysis_notebooks": [
+          "sim2410 iSPN analysis.ipynb",
+          "sim2411 iSPN analysis.ipynb",
+          "sim2418 iSPN analysis.ipynb",
+          "sim2419 iSPN analysis.ipynb"
+        ],
+        "legend_excerpt": "Synaptic potentials at a dendritic site (site 1) and soma showing the effect of varying fast synaptic GABAergic input alone (gray) and when delivered 30 ms after suprathreshold glutamatergic input (14 inputs/site; color traces). Traces illustrate the effect of increasing GABAergic synaptic activity (0 - 48 synapses; each comprising 40 receptors with 25 pS peak conductance; blue to red) delivered at the same temporal offset (i.e. Δt = -30 ms) in the absence and presence of M1R activation."
+      },
+      "c": {
+        "description": "Reconstructed iSPN morphology showing four dendritic sites of clustered glutamatergic activation and slow extrasynaptic GABAergic receptor activation",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control"],
+        "simulations": ["sim2511"],
+        "simulation_notebook": "sim251x downsample.ipynb",
+        "analysis_notebooks": ["sim2511 iSPN analysis.ipynb"],
+        "legend_excerpt": "As in (a, b) but for slow extrasynaptic GABAergic receptor activation (0 -1920 receptors; blue to red)."
+      },
+      "d": {
+        "description": "Effect of varying number of slow extrasynaptic GABAergic receptor activations at fixed suprathreshold glutamatergic input in control and following M1 receptor activation for iSPN",
+        "cell_type": "iSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "slow extrasynaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2510", "sim2511", "sim2518", "sim2519"],
+        "simulation_notebook": "sim251x downsample.ipynb",
+        "analysis_notebooks": [
+          "sim2510 iSPN analysis.ipynb",
+          "sim2511 iSPN analysis.ipynb",
+          "sim2518 iSPN analysis.ipynb",
+          "sim2519 iSPN analysis.ipynb"
+        ],
+        "legend_excerpt": "As in (a, b) but for slow extrasynaptic GABAergic receptor activation (0 -1920 receptors; blue to red) color-matched to the same overall conductance loads as panel c (i.e. SgGABA) at the same temporal offset (i.e. Δt = -30 ms). The suppression of spiking and its relief by M1R activation were more pronounced with slow GABAergic activation than fast synaptic activation at the same overall conductance load."
+      }
+    }
+  },
+
+  "Figure S4": {
+    "legend": "Figure S4. Effect of M1 mAChR activation on the interaction between glutamatergic input and fast synaptic GABAergic responses in a model dSPN. (a) Circuit diagram depicting cholinergic control of GABAergic microcircuits targeting SPNs and a schematic illustrating inputs onto a stretch of SPN dendrite. (b) Reconstructed dSPN morphology showing subthreshold (1 site) and suprathreshold (4 sites) clustered glutamatergic activation (red) and fast synaptic GABAergic input (blue). (c) Effect of fast synaptic GABAergic activation on glutamatergic synaptic potentials at dendritic and somatic sites in control (left) and following M1 receptor modulation of Kv7 channels (right). Black trace: subthreshold glutamatergic excitation (12 inputs). Gray trace: fast GABAergic synaptic activation (12 synapses each comprising 40 receptors with 25 pS peak conductance; ΣgGABA = 12 nS; PSP = 6.3 mV at dendritic spike site). Colored traces (blue to red): glutamatergic-GABAergic interaction at temporal offsets Δt = tGLUT - tGABA is illustrated from -30 to 150 ms; 10 ms intervals. (d) Summary of timing dependent effects on PSP amplitude. No effect of M1 receptor activation was observed. (e, f) As in (c, d) but for suprathreshold glutamatergic input. Fast synaptic GABAergic input reduced somatic output with only modest effects of M1 receptor mediated modulation. As in (c, d) but for suprathreshold glutamatergic input (15 inputs per site). Gray trace: fast synaptic GABAergic activation (40 synapses each comprising 40 receptors with 25 pS peak conductance; ΣgGABA = 40 nS). Colored traces (blue to red): glutamatergic-GABAergic interaction at temporal offsets Δt = tGLUT - tGABA of -100, -80, -60, -40, -20, respectively. Only a modest effect of M1 receptor activation on spike output was observed.",
+    "panels": {
+      "b": {
+        "description": "Reconstructed dSPN morphology showing subthreshold and suprathreshold clustered glutamatergic activation and fast synaptic GABAergic input",
+        "cell_type": "dSPN",
+        "glutamate_input": ["subthreshold", "suprathreshold"],
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control"],
+        "simulations": ["sim2256", "sim2811"],
+        "simulation_notebook": ["sim225xx downsample.ipynb", "sim281xx downsample.ipynb"],
+        "analysis_notebooks": ["sim2256 analysis.ipynb", "sim2811 dSPN analysis.ipynb"],
+        "legend_excerpt": "Reconstructed dSPN morphology showing subthreshold (1 site) and suprathreshold (4 sites) clustered glutamatergic activation (red) and fast synaptic GABAergic input (blue)."
+      },
+      "c": {
+        "description": "Fast synaptic GABAergic activation effect on subthreshold glutamatergic synaptic potentials at dendritic and somatic sites in control and following M1 receptor activation for dSPN",
+        "cell_type": "dSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2256", "sim22512"],
+        "simulation_notebook": "sim225xx downsample.ipynb",
+        "analysis_notebooks": ["sim2256 analysis.ipynb", "sim22512 analysis.ipynb"],
+        "legend_excerpt": "Effect of fast synaptic GABAergic activation on glutamatergic synaptic potentials at dendritic and somatic sites in control (left) and following M1 receptor modulation of Kir2 channels (right). Black trace: subthreshold glutamatergic excitation (12 inputs). Gray trace: slow GABAergic activation (170 receptors, 25 pS; SgGABA = 4.25 nS; PSP = 6.3 mV at dendritic spike site). Colored traces (blue to red): glutamatergic-GABAergic interaction at temporal offsets Δt = tGLUT - tGABA is illustrated from -30 to 150 ms; 10 ms intervals."
+      },
+      "d": {
+        "description": "Summary of timing-dependent effects on PSP amplitude in control and following M1 receptor activation for dSPN; fast synaptic GABAergic input",
+        "cell_type": "dSPN",
+        "glutamate_input": "subthreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2257", "sim22513"],
+        "simulation_notebook": "sim225xx downsample.ipynb",
+        "analysis_notebooks": ["sim2257 analysis.ipynb", "sim22513 analysis.ipynb"],
+        "legend_excerpt": "Summary of timing dependent effects on PSP amplitude. No effect of M1 receptor activation was observed."
+      },
+      "e": {
+        "description": "Fast synaptic GABAergic activation effect on suprathreshold glutamatergic responses at dendritic and somatic sites in control and following M1 receptor activation for dSPN",
+        "cell_type": "dSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim2811", "sim2813"],
+        "simulation_notebook": "sim281xx downsample.ipynb",
+        "analysis_notebooks": ["sim2811 dSPN analysis.ipynb", "sim2813 dSPN analysis.ipynb"],
+        "legend_excerpt": "As in (c, d) but for suprathreshold glutamatergic input. Fast synaptic GABAergic input reduced somatic output with only modest effects of M1 receptor mediated modulation."
+      },
+      "f": {
+        "description": "Summary of timing-dependent effects on somatic spike output in control and following M1 receptor activation for dSPN at high fidelity; fast synaptic GABAergic input",
+        "cell_type": "dSPN",
+        "glutamate_input": "suprathreshold",
+        "gaba_type": "fast synaptic GABAergic",
+        "conditions": ["control", "M1 receptor activation"],
+        "simulations": ["sim28111", "sim28113"],
+        "simulation_notebook": "sim281xx downsample.ipynb",
+        "analysis_notebooks": ["sim28111 dSPN analysis.ipynb", "sim28113 dSPN analysis.ipynb"],
+        "legend_excerpt": "Only a modest effect of M1 receptor activation on spike output was observed."
+      }
+    }
+  }
+}
