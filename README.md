@@ -8,7 +8,7 @@ It also provides the `Python` code used to analyse the resulting `NEURON + Pytho
 
 The `NEURON + Python` model is built on top of the `striatal_SPN_lib` repository created by Lindroos and Kotaleski, 2020:
 
-Lindroos R, Kotaleski JH. Predicting complex spikes in striatal projection neurons of the direct pathway following neuromodulation by acetylcholine and dopamine. Eur J Neurosci. 2020. <a href="https://doi.org/10.1111/ejn.14891"><img src="example%20images/doi_lindroos_kotaleski.svg" alt="DOI: 10.1111/ejn.14891"></a>
+Lindroos R, Kotaleski JH. Predicting complex spikes in striatal projection neurons of the direct pathway following neuromodulation by acetylcholine and dopamine. Eur J Neurosci. 2020. <a href="https://doi.org/10.1111/ejn.14891"><img src="example%20images/doi_lindroos_kotaleski.svg" alt="DOI: 10.1111/ejn.14891" height="20"></a>
 
 The original model can be found here [modelDB](https://modeldb.science/266775) or [`GitHub`](https://github.com/ModelDBRepository/266775)
 
@@ -83,7 +83,7 @@ National Institute of Neurological Disorders and Stroke [R37 NS034696], P.O. Box
 - [`Conda`](https://docs.conda.io/projects/conda/en/stable)
 - `NEURON` (tested on versions 8.1 and 8.2). Install from the [official website](https://www.neuronsimulator.org). Older `NEURON` releases, including 8.2.x installers, are available on [GitHub](https://github.com/neuronsimulator/nrn/releases).
 
-  Reference: Hines ML, Carnevale NT. The `NEURON` Simulation Environment. Neural Comput. 1997. <a href="https://doi.org/10.1162/neco.1997.9.6.1179"><img src="example%20images/doi_neuron.svg" alt="DOI: 10.1162/neco.1997.9.6.1179"></a>
+  Reference: Hines ML, Carnevale NT. The `NEURON` Simulation Environment. Neural Comput. 1997. <a href="https://doi.org/10.1162/neco.1997.9.6.1179"><img src="example%20images/doi_neuron.svg" alt="DOI: 10.1162/neco.1997.9.6.1179" height="20"></a>
 - `Python` (tested using version 3.11.11)
 
 ### Steps
@@ -664,15 +664,15 @@ Instructions for cloning a repository using `GitHub` Desktop can be found [here]
 
 ## References
 
-Day M, Belal M, Surmeier WC, Melendez A, Wokosin D, Tkatch T, et al. GABAergic regulation of striatal spiny projection neurons depends upon their activity state. PLoS Biol. 2024;22: e3002483. <a href="https://doi.org/10.1371/journal.pbio.3002483"><img src="example%20images/doi_day_belal.svg" alt="DOI: 10.1371/journal.pbio.3002483"></a>
+Day M, Belal M, Surmeier WC, Melendez A, Wokosin D, Tkatch T, et al. GABAergic regulation of striatal spiny projection neurons depends upon their activity state. PLoS Biol. 2024;22: e3002483. <a href="https://doi.org/10.1371/journal.pbio.3002483"><img src="example%20images/doi_day_belal.svg" alt="DOI: 10.1371/journal.pbio.3002483" height="20"></a>
 
-Du K, Wu Y-W, Lindroos R, Liu Y, Rózsa B, Katona G, et al. Cell-type–specific inhibition of the dendritic plateau potential in striatal spiny projection neurons. Proceedings of the National Academy of Sciences. 2017;114: E7612–E7621. <a href="https://doi.org/10.1073/pnas.1704893114"><img src="example%20images/doi_du_lindroos.svg" alt="DOI: 10.1073/pnas.1704893114"></a>
+Du K, Wu Y-W, Lindroos R, Liu Y, Rózsa B, Katona G, et al. Cell-type–specific inhibition of the dendritic plateau potential in striatal spiny projection neurons. Proceedings of the National Academy of Sciences. 2017;114: E7612–E7621. <a href="https://doi.org/10.1073/pnas.1704893114"><img src="example%20images/doi_du_lindroos.svg" alt="DOI: 10.1073/pnas.1704893114" height="20"></a>
 
-Hines ML, Carnevale NT. The `NEURON` Simulation Environment. Neural Comput. 1997;9: 1179–1209. <a href="https://doi.org/10.1162/neco.1997.9.6.1179"><img src="example%20images/doi_neuron.svg" alt="DOI: 10.1162/neco.1997.9.6.1179"></a>
+Hines ML, Carnevale NT. The `NEURON` Simulation Environment. Neural Comput. 1997;9: 1179–1209. <a href="https://doi.org/10.1162/neco.1997.9.6.1179"><img src="example%20images/doi_neuron.svg" alt="DOI: 10.1162/neco.1997.9.6.1179" height="20"></a>
 
-Lindroos R, Dorst MC, Du K, Filipović M, Keller D, Ketzef M, et al. Basal Ganglia Neuromodulation Over Multiple Temporal and Structural Scales-Simulations of Direct Pathway MSNs Investigate the Fast Onset of Dopaminergic Effects and Predict the Role of K<sub>v</sub>4.2. Frontiers in neural circuits. 2018;12: 3. <a href="https://doi.org/10.3389/fncir.2018.00003"><img src="example%20images/doi_lindroos_dorst.svg" alt="DOI: 10.3389/fncir.2018.00003"></a>
+Lindroos R, Dorst MC, Du K, Filipović M, Keller D, Ketzef M, et al. Basal Ganglia Neuromodulation Over Multiple Temporal and Structural Scales-Simulations of Direct Pathway MSNs Investigate the Fast Onset of Dopaminergic Effects and Predict the Role of K<sub>v</sub>4.2. Frontiers in neural circuits. 2018;12: 3. <a href="https://doi.org/10.3389/fncir.2018.00003"><img src="example%20images/doi_lindroos_dorst.svg" alt="DOI: 10.3389/fncir.2018.00003" height="20"></a>
 
-Lindroos R, Kotaleski JH. Predicting complex spikes in striatal projection neurons of the direct pathway following neuromodulation by acetylcholine and dopamine. Eur J Neurosci. 2020. <a href="https://doi.org/10.1111/ejn.14891"><img src="example%20images/doi_lindroos_kotaleski.svg" alt="DOI: 10.1111/ejn.14891"></a>
+Lindroos R, Kotaleski JH. Predicting complex spikes in striatal projection neurons of the direct pathway following neuromodulation by acetylcholine and dopamine. Eur J Neurosci. 2020. <a href="https://doi.org/10.1111/ejn.14891"><img src="example%20images/doi_lindroos_kotaleski.svg" alt="DOI: 10.1111/ejn.14891" height="20"></a>
 
 
 

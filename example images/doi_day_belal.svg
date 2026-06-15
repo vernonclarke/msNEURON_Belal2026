@@ -1,21 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="218" height="20" role="img" aria-label="DOI: 10.1371/journal.pbio.3002483">
-  <title>DOI: 10.1371/journal.pbio.3002483</title>
-  <linearGradient id="s" x2="0" y2="100%">
-    <stop offset="0" stop-color="#fff" stop-opacity=".18"/>
-    <stop offset="1" stop-color="#000" stop-opacity=".18"/>
-  </linearGradient>
-  <clipPath id="r">
-    <rect width="218" height="20" rx="3" fill="#fff"/>
-  </clipPath>
-  <g clip-path="url(#r)">
-    <rect width="32" height="20" fill="#555"/>
-    <rect x="32" width="186" height="20" fill="#1f6feb"/>
-    <rect width="218" height="20" fill="url(#s)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 218 20">
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        fill: #1f6feb;
+      }
+
+      .st2 {
+        fill: url(#linear-gradient);
+      }
+
+      .st3 {
+        fill: #fff;
+      }
+
+      .st3, .st4 {
+        isolation: isolate;
+      }
+
+      .st3, .st5 {
+        font-family: Verdana, Verdana;
+        font-size: 11px;
+      }
+
+      .st5 {
+        fill: #010101;
+      }
+
+      .st6 {
+        fill: #555;
+      }
+
+      .st7 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" width="218" height="20" rx="3" ry="3"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0" y1="0" x2="0" y2="1" gradientTransform="scale(218 20)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".18"/>
+    </linearGradient>
+  </defs>
+  <g class="st7">
+    <g>
+      <rect class="st6" width="32" height="20"/>
+      <rect class="st1" x="32" width="186" height="20"/>
+      <rect class="st2" width="218" height="20"/>
+    </g>
   </g>
-  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">
-    <text x="16" y="15" fill="#010101" fill-opacity=".3">DOI</text>
-    <text x="16" y="14">DOI</text>
-    <text x="125" y="15" fill="#010101" fill-opacity=".3">10.1371/journal.pbio.3002483</text>
-    <text x="125" y="14">10.1371/journal.pbio.3002483</text>
+  <g>
+    <g class="st4">
+      <text class="st5" transform="translate(5.12 15)"><tspan x="0" y="0">DOI</tspan></text>
+    </g>
+    <text class="st3" transform="translate(5.12 14)"><tspan x="0" y="0">DOI</tspan></text>
+    <g class="st4">
+      <text class="st5" transform="translate(52.65 15)"><tspan x="0" y="0">10.1371/journal.pbio.3002483</tspan></text>
+    </g>
+    <text class="st3" transform="translate(52.65 14)"><tspan x="0" y="0">10.1371/journal.pbio.3002483</tspan></text>
   </g>
 </svg>
