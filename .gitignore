@@ -15,6 +15,7 @@ dspn/
 ispn/
 logs/
 docs/
+downsample/
 
 
 *.txt
