@@ -124,13 +124,13 @@ This page provides movie versions of the simulations illustrated for Figures 4, 
   <div style="display:inline-block; width:48%; text-align:center; vertical-align:top;">
     <p>control</p>
     <a href="https://github.com/vernonclarke/msNEURON_Belal2026/raw/main/animations/dSPN_2911_Vsoma_anim_1000.mp4?download=">
-      <img src="./animations/dSPN_2911_Vsoma_anim_700.png" alt="Dendritic voltage animation ctrl" />
+      <img src="./animations/dSPN_2911_Vsoma_anim_700.png" alt="Somatic voltage animation ctrl" />
     </a>
   </div>
   <div style="display:inline-block; width:48%; text-align:center; vertical-align:top;">
     <p>M<sub>1</sub> activation</p>
     <a href="https://github.com/vernonclarke/msNEURON_Belal2026/raw/main/animations/dSPN_2913_Vsoma_anim_1000.mp4?download=">
-      <img src="./animations/dSPN_2913_Vsoma_anim_700.png" alt="Dendritic voltage animation M1 activation" />
+      <img src="./animations/dSPN_2913_Vsoma_anim_700.png" alt="Somatic voltage animation M1 activation" />
     </a>
   </div>
 </div>
