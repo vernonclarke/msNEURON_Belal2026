@@ -1,6 +1,8 @@
 <h1 align="center">Repository for <code>NEURON + Python</code> Model of Striatal Projection Neurons</h1>
 
-This repository contains a `NEURON + Python` model of striatal projection neurons (or SPNs) designed to simulate the interaction between GABAergic and glutamatergic synaptic inputs. <a href="https://doi.org/10.5281/zenodo.20705696"><img src="example%20images/doi_zenodo.svg" alt="DOI: 10.5281/zenodo.20705696" height="20"></a>
+This repository contains a `NEURON + Python` model of striatal projection neurons (or SPNs) designed to simulate the interaction between GABAergic and glutamatergic synaptic inputs. 
+
+<a href="https://doi.org/10.5281/zenodo.20705696"><img src="example%20images/doi_zenodo.svg" alt="DOI: 10.5281/zenodo.20705696" height="20"></a>
 
 It also provides the `Python` code used to analyse the resulting `NEURON + Python` output to generate all graph and figure outputs.
 
