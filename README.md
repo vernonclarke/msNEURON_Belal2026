@@ -17,7 +17,7 @@ The original model can be found here [modelDB](https://modeldb.science/266775) o
 
 The code presented here was used to generate model simulations in the following manuscript:
 
-**Cholinergic interneuron control of intrastriatal GABAergic circuits targeting spiny projection neurons is disrupted in Parkinson’s disease models**
+**Cholinergic interneuron control of GABAergic circuits targeting spiny projection neurons is disrupted in parkinsonian models**
 
 Belal, M. <sup>1, 2</sup> <a href="https://orcid.org/0000-0001-8778-0617"><img src="example%20images/orcid_16x16.png" width="16" height="16" alt="ORCID iD"></a>,
 Perez-Rosello, T. <sup>1, 2</sup> <a href="https://orcid.org/0009-0007-8952-2276"><img src="example%20images/orcid_16x16.png" width="16" height="16" alt="ORCID iD"></a>,
